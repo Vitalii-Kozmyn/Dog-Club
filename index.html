@@ -4,39 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dog Club</title>
+    <link rel="stylesheet" href="./scss/main.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="header__container">
-          <nav>
+          <nav class="header__nav">
             <a href="/"><img src="./images/logo.svg" alt="Logo Dog Club" /></a>
-            <ul class="header__menu">
+            <ul class="header__container__menu">
               <li><a class="link" href="">Less talk</a></li>
               <li><a class="link" href="">Services category</a></li>
               <li><a class="link" href="">Happy customer</a></li>
               <li><a class="link" href="">Contact</a></li>
             </ul>
-            <button type="button">
-              <svg><use href="./images/icon.svg#icon-Cart"></use></svg>
-            </button>
-            <button type="button">Contact us</button>
           </nav>
+          <div class="header__container__button">
+            <button class="header__button-cart" type="button">
+              <svg width="32" height="32">
+                <use href="./images/icon.svg#icon-Cart"></use>
+              </svg>
+            </button>
+            <button class="button" type="button">Contact us</button>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
-          <div class="hero-section__text">
-            <h1>Taking care for your Smart Dog!</h1>
-            <p>
-              Human–canine bonding is the relationship between dogs and humans
-            </p>
-            <button type="button">Explore More</button>
-          </div>
-          <div class="hero-section__images">
-            <img src="./images/dog-hero.png" alt="Beautiful dog in black" />
+          <div class="hero-section__container">
+            <div class="hero-section__description">
+              <h1 class="hero-section__title">
+                Taking care for <br />
+                your Smart Dog!
+              </h1>
+              <p class="hero-section__text">
+                Human–canine bonding is the relationship <br />
+                between dogs and humans
+              </p>
+              <button class="button" type="button">Explore More</button>
+            </div>
+            <div class="hero-section__images">
+              <img src="./images/dog-hero.png" alt="Beautiful dog in black" />
+            </div>
           </div>
         </div>
       </section>

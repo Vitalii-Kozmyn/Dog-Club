@@ -1,0 +1,28 @@
+body {
+  background-image: url(../images/background-body.jpg);
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Rowdies", sans-serif;
+}
+
+address {
+  font-style: normal;
+}
