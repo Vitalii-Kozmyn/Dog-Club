@@ -320,4 +320,49 @@ address {
   font-size: 56px;
   font-weight: 400;
   text-align: center;
+}
+
+.services-section__title {
+  margin-top: -30px;
+}
+.services-section .services-category__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.services-section .services-category__container-item {
+  background: linear-gradient(180deg, #ffffff 0%, #fffbf4 100%);
+  box-shadow: 0px 4px 4px 0px rgba(24, 24, 23, 0.0509803922);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 16px;
+}
+.services-section .services-category__link {
+  color: var(--color-primary-yellow);
+  text-decoration: none;
+  margin-top: 16px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.services-section .services-category__more-link {
+  color: var(--color-primary-yellow);
+  margin-top: auto;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+.services-section .services-category__more-link::after {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 14px;
+  right: 0px;
+  top: auto;
+  left: auto;
+  margin-left: 12px;
+  background-image: url("../images/icon-arrow.svg"); /* Припускаючи, що SVG не використовує фрагменти */
 }/*# sourceMappingURL=main.css.map */
