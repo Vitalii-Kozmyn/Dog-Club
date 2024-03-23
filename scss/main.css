@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* roboto-100 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -117,6 +118,7 @@
 body {
   background-image: url(../images/background-body.jpg);
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
   line-height: 1.5;
   background-repeat: no-repeat;
   background-size: cover;
@@ -152,6 +154,10 @@ address {
   font-weight: 500;
   font-size: 18px;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+.button:hover {
+  background-color: var(--color-secondary-yellow);
 }
 
 .header {
@@ -205,6 +211,72 @@ address {
   padding: 0 24px;
 }
 
+.description-container {
+  display: flex;
+  padding: 50px 0 0 0;
+  position: relative;
+}
+.description-container__title {
+  text-align: left !important;
+  line-height: 1.3;
+  margin-bottom: 36px;
+}
+.description-container__text {
+  margin: 80px 0 0 100px;
+}
+.description-container__text-p {
+  font-size: 22px;
+  font-weight: 400;
+}
+.description-container__dog-image {
+  background-image: url(../images/dog-description-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 120px 0 200px 0;
+}
+.description-container__paw-top {
+  position: absolute;
+  top: 120px;
+  left: 160px;
+  transform: rotate(50deg);
+}
+.description-container__play {
+  position: absolute;
+  background-image: url(../images//play-button-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 161px;
+  height: 123px;
+  top: 142px;
+  left: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.description-container .play-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%; /* Додає круглу форму для кнопки */
+}
+.description-container .play-button__text {
+  color: white;
+  margin-top: 2px;
+}
+.description-container__paw-left {
+  position: absolute;
+  left: 50px;
+  top: 380px;
+}
+.description-container__paw-right {
+  position: absolute;
+  left: 420px;
+  top: 300px;
+  transform: rotate(120deg);
+}
+
 .hero-section {
   background-image: url(../images/bg-hero.png);
   background-repeat: no-repeat;
@@ -215,7 +287,7 @@ address {
 .hero-section__container {
   background-image: url(../images/bg-hero-container.png);
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -242,4 +314,10 @@ address {
 .hero-section__text {
   font-size: 22px;
   font-weight: 400;
+}
+
+.section-title {
+  font-size: 56px;
+  font-weight: 400;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
