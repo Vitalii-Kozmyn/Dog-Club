@@ -1,0 +1,20 @@
+.customer-section {
+  margin-top: 86px;
+  &__slider {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__container {
+    overflow: hidden;
+  }
+
+  &__list {
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    display: flex;
+  }
+}
