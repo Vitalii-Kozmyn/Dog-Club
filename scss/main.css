@@ -117,11 +117,12 @@
 
 body {
   background-image: url(../images/background-body.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 2722px;
 }
 
 ul {
@@ -461,6 +462,103 @@ address {
   display: flex;
 }
 
+.contact-section {
+  position: relative;
+  background-image: url(../images/bg-contact-section.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact-section::after, .contact-section::before {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  background-repeat: no-repeat;
+  content: "";
+}
+.contact-section::after {
+  width: 322px;
+  height: 752px;
+  right: 0;
+  left: auto;
+  background-image: url(../images/decor-dog-right.png);
+}
+.contact-section::before {
+  width: 488px;
+  height: 520px;
+  right: auto;
+  left: 0;
+  background-image: url(../images/decor-dog-left.png);
+}
+
+.contact-container {
+  justify-content: center;
+  text-align: center;
+}
+.contact-container__form-field {
+  margin: 0 auto;
+}
+.contact-container__title {
+  inline-size: 1.4;
+  padding-top: 242px;
+  margin-bottom: 0;
+}
+.contact-container__text {
+  color: var(--color-secondary-dark);
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+.contact-container__button-contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  gap: 10px;
+}
+
+.contact-form {
+  align-items: center;
+}
+
+.footer {
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+.footer__container {
+  background-color: var(--color-secondary-light);
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: row;
+}
+.footer__container__icon-link {
+  margin-top: 18px;
+}
+.footer__container__nav {
+  display: flex;
+  flex-direction: row;
+  gap: 160px;
+  text-align: left;
+}
+.footer__container__menu {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 14px;
+  text-wrap: nowrap;
+}
+.footer__container__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+.footer__container__contact-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
 .carousel-button {
   display: flex;
   align-items: center;
@@ -478,4 +576,61 @@ address {
 }
 .carousel-button.next {
   transform: rotate(180deg);
+}
+
+.input {
+  position: relative;
+  padding: 8px 22px;
+  width: 600px;
+}
+.input__label {
+  position: absolute;
+  top: 16px;
+  left: 42px;
+}
+.input__control {
+  padding: 8px 24px;
+  font-size: 18px;
+  width: 100%;
+  line-height: 1.17;
+  font-weight: 400;
+  border: 1px solid var(--color-primary-yellow);
+  border-radius: 8px;
+  background-color: transparent;
+}
+.input__control:focus {
+  border-color: var(--color-primary-yellow);
+  outline: none;
+}
+.input__control::-moz-placeholder {
+  color: var(--color-primary-yellow);
+  font-size: 16px;
+  line-height: 1.17;
+}
+.input__control::placeholder {
+  color: var(--color-primary-yellow);
+  font-size: 16px;
+  line-height: 1.17;
+}
+.input__control:focus::-moz-placeholder {
+  color: var(--color-primary-dark);
+}
+.input__control:focus::placeholder {
+  color: var(--color-primary-dark);
+}
+
+.contact-container__form-field .input {
+  position: relative;
+}
+
+.input-name::before {
+  background-image: url(../images/icon.svg#icon-fluent-people);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  content: "";
+  top: 50%;
+  left: 10px;
+  width: 16px; /* Або розмір вашої іконки */
+  height: 16px; /* Або розмір вашої іконки */
 }/*# sourceMappingURL=main.css.map */

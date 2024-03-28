@@ -1,10 +1,11 @@
 body {
   background-image: url(../images/background-body.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 2722px;
 }
 
 ul {

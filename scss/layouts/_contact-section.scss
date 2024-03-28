@@ -1,0 +1,64 @@
+.contact-section {
+  position: relative;
+  background-image: url(../images/bg-contact-section.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::after,
+  &::before {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  &::after {
+    width: 322px;
+    height: 752px;
+    right: 0;
+    left: auto;
+    background-image: url(../images/decor-dog-right.png);
+  }
+
+  &::before {
+    width: 488px;
+    height: 520px;
+    right: auto;
+    left: 0;
+    background-image: url(../images/decor-dog-left.png);
+  }
+}
+
+.contact-container {
+  justify-content: center;
+  text-align: center;
+
+  &__form-field {
+    margin: 0 auto;
+  }
+
+  &__title {
+    inline-size: 1.4;
+    padding-top: 242px;
+    margin-bottom: 0;
+  }
+
+  &__text {
+    color: var(--color-secondary-dark);
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
+
+  &__button-contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 10px;
+  }
+}
+
+.contact-form {
+  align-items: center;
+}
