@@ -355,7 +355,7 @@
                     type="tel"
                     name="user-tel"
                     id="user-tel"
-                    placeholder="Телефон"
+                    placeholder="Your phone"
                     pattern="^\+[0-9]{12}"
                     placeholder="Your phone"
                     required
@@ -414,33 +414,37 @@
             </ul>
 
             <div class="footer__container__contact">
-              <label class="input__label visually-hidden" for="user-email">
-              </label>
-              <input
-                class="input__control"
-                type="email"
-                name="user-email"
-                id="user-email"
-                placeholder="Your email"
-                required
-              />
-              <label class="input__label visually-hidden" for="user-cmc">
-              </label>
-              <input
-                class="input__control"
-                type="text"
-                name="user-cmc"
-                id="user-cmc"
-                placeholder="Your cmc"
-                required
-              />
-              <div class="footer__container__contact-button">
-                <button class="button" type="submit">Contact us</button>
-                <label>
-                  <input type="checkbox" checked="checked" />
-                  <span>I agree to the privacy policy</span>
-                </label>
-              </div>
+              <form name="footer-form" autocomplete="off">
+                <div class="footer__container__contact-form">
+                  <label class="input__label visually-hidden" for="user-email">
+                  </label>
+                  <input
+                    class="input__control"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Your email"
+                    required
+                  />
+                  <label class="input__label visually-hidden" for="user-cmc">
+                  </label>
+                  <input
+                    class="input__control"
+                    type="text"
+                    name="user-cmc"
+                    id="user-cmc"
+                    placeholder="Your cmc"
+                    required
+                  />
+                  <div class="footer__container__contact-form__button">
+                    <button class="button" type="submit">Contact us</button>
+                    <label>
+                      <input type="checkbox" checked="checked" />
+                      <span>I agree to the privacy policy</span>
+                    </label>
+                  </div>
+                </div>
+              </form>
             </div>
           </nav>
         </div>
