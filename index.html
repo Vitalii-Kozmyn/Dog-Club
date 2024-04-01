@@ -33,7 +33,9 @@
                 <use href="./images/icon.svg#icon-Cart"></use>
               </svg>
             </button>
-            <button class="button" type="button">Contact us</button>
+            <button class="button modal-btn-open" type="button">
+              Contact us
+            </button>
           </div>
         </div>
       </div>
@@ -458,7 +460,83 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal__btn-close modal-btn-close" type="button">
+          <svg width="32" height="32">
+            <use href="./images/icon.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">
+          Our experts will take <br />
+          care of your friend
+        </h2>
+        <p class="modal__text">Fill out the form so we can contact you!</p>
+        <form name="modal-form" autocomplete="off">
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-name">
+            </label>
+            <input
+              class="input__control input-name"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Your name"
+              required
+            />
+          </div>
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-name">
+            </label>
+            <input
+              class="input__control"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Pet name"
+              required
+            />
+          </div>
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-name">
+            </label>
+            <input
+              class="input__control"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              placeholder="Your phone"
+              pattern="^\+[0-9]{12}"
+              placeholder="Your phone"
+              required
+            />
+          </div>
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-email">
+            </label>
+            <input
+              class="input__control"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Your email"
+              required
+            />
+          </div>
+          <div class="modal__button-contact">
+            <button class="button" type="submit">Contact us</button>
+            <label>
+              <input type="checkbox" checked="checked" />
+              <span>I agree to the privacy policy</span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/customer-slider.js"></script>
   </body>
 </html>
