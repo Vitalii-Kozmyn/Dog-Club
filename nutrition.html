@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutrition</title>
+    <link rel="stylesheet" href="./scss/second-main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <nav class="header__nav">
+            <a href="/"><img src="./images/logo.svg" alt="Logo Dog Club" /></a>
+            <ul class="header__container__menu">
+              <li><a class="link" href="#description-section">Less talk</a></li>
+              <li>
+                <a class="link" href="#services-section">Services category</a>
+              </li>
+              <li>
+                <a class="link" href="#customer-section">Happy customer</a>
+              </li>
+              <li><a class="link" href="#contact-section">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header__container__button">
+            <button class="header__button-cart" type="button">
+              <svg width="32" height="32">
+                <use href="./images/icon.svg#icon-Cart"></use>
+              </svg>
+            </button>
+            <button class="button modal-btn-open" type="button">
+              Contact us
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="nutrition-container">
+            <div class="nutrition-container__header">
+              <h2 class="nutrition-container__title">Nutrition</h2>
+              <div class="nutrition-container__sorting-menu">
+                <p>Sorting:</p>
+                <button
+                  class="nutrition-container__sorting-menu-list"
+                  type="submit"
+                >
+                  Popularity
+                </button>
+                <button
+                  class="nutrition-container__sorting-menu-list"
+                  type="submit"
+                >
+                  Cheaper first
+                </button>
+                <button
+                  class="nutrition-container__sorting-menu-list"
+                  type="submit"
+                >
+                  More expensive first
+                </button>
+                <button
+                  class="nutrition-container__sorting-menu-list"
+                  type="submit"
+                >
+                  By name
+                </button>
+                <button
+                  class="nutrition-container__sorting-menu-list"
+                  type="submit"
+                >
+                  New ones first
+                </button>
+              </div>
+            </div>
+            <div>
+              <ul class="nutrition-container__card">
+                <li class="nutrition-container__card-item">
+                  <article>
+                    <div class="nutrition-container__card-item-img">
+                      <img src="./images/dog-feed.png" alt="" />
+                    </div>
+                    <div class="nutrition-container__card-item-code">
+                      <p>Vendor code: 37875</p>
+                      <img src="./images/notfull-star.png" alt="" />
+                    </div>
+                    <div>
+                      <p class="nutrition-container__card-item-text">
+                        Dry food for dogs of average breeds Savory 3 kg (turkey
+                        and lamb)
+                      </p>
+                      <div class="nutrition-container__card-item-price">
+                        <p>136.00$</p>
+                        <p
+                          class="nutrition-container__card-item-price__old-price"
+                        >
+                          320.43$
+                        </p>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      class="button nutrition-container__card-item-button"
+                    >
+                      Buy
+                    </button>
+                  </article>
+                </li>
+                <li class="nutrition-container__card-item">
+                  <article>
+                    <div class="nutrition-container__card-item-img">
+                      <img src="./images/dog-feed-2.png" alt="" />
+                    </div>
+                    <div class="nutrition-container__card-item-code">
+                      <p>Vendor code: 34905</p>
+                      <img src="./images/full-star.png" alt="" />
+                    </div>
+                    <div>
+                      <p class="nutrition-container__card-item-text">
+                        Dry food for dogs of small breeds Savory 3 kg (lamb)
+                      </p>
+                      <div class="nutrition-container__card-item-price">
+                        <p>140.00$</p>
+                        <p
+                          class="nutrition-container__card-item-price__old-price"
+                        >
+                          320.43$
+                        </p>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      class="button nutrition-container__card-item-button"
+                    >
+                      Buy
+                    </button>
+                  </article>
+                </li>
+                <li class="nutrition-container__card-item">
+                  <article>
+                    <div class="nutrition-container__card-item-img">
+                      <img src="./images/dog-feed-3.png" alt="" />
+                    </div>
+                    <div class="nutrition-container__card-item-code">
+                      <p>Vendor code: 00027</p>
+                      <img src="./images/full-star.png" alt="" />
+                    </div>
+                    <div>
+                      <p class="nutrition-container__card-item-text">
+                        Dry food for dogs of all breeds Savory 3 kg (rabbit and
+                        duck)
+                      </p>
+                      <div class="nutrition-container__card-item-price">
+                        <p>136.00$</p>
+                        <p
+                          class="nutrition-container__card-item-price__old-price"
+                        >
+                          320.43$
+                        </p>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      class="button nutrition-container__card-item-button"
+                    >
+                      Buy
+                    </button>
+                  </article>
+                </li>
+                <li class="nutrition-container__card-item">
+                  <article>
+                    <div class="nutrition-container__card-item-img">
+                      <img src="./images/dog-feed-3.png" alt="" />
+                    </div>
+                    <div class="nutrition-container__card-item-code">
+                      <p>Vendor code: 00028</p>
+                      <img src="./images/full-star.png" alt="" />
+                    </div>
+                    <div>
+                      <p class="nutrition-container__card-item-text">
+                        Dry food for dogs of all breeds Savory 5 kg (rabbit and
+                        duck)
+                      </p>
+                      <div class="nutrition-container__card-item-price">
+                        <p>346.00$</p>
+                        <p
+                          class="nutrition-container__card-item-price__old-price"
+                        >
+                          450.43$
+                        </p>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      class="button nutrition-container__card-item-button"
+                    >
+                      Buy
+                    </button>
+                  </article>
+                </li>
+                <li class="nutrition-container__card-item">
+                  <article>
+                    <div class="nutrition-container__card-item-img">
+                      <img src="./images/dog-feed-2.png" alt="" />
+                    </div>
+                    <div class="nutrition-container__card-item-code">
+                      <p>Vendor code: 34905</p>
+                      <img src="./images/full-star.png" alt="" />
+                    </div>
+                    <div>
+                      <p class="nutrition-container__card-item-text">
+                        Dry food for dogs of small breeds Savory 3 kg (lamb)
+                      </p>
+                      <div class="nutrition-container__card-item-price">
+                        <p>140.00$</p>
+                        <p
+                          class="nutrition-container__card-item-price__old-price"
+                        >
+                          320.43$
+                        </p>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      class="button nutrition-container__card-item-button"
+                    >
+                      Buy
+                    </button>
+                  </article>
+                </li>
+                <li class="nutrition-container__card-item">
+                  <article>
+                    <div class="nutrition-container__card-item-img">
+                      <img src="./images/dog-feed-3.png" alt="" />
+                    </div>
+                    <div class="nutrition-container__card-item-code">
+                      <p>Vendor code: 00028</p>
+                      <img src="./images/full-star.png" alt="" />
+                    </div>
+                    <div>
+                      <p class="nutrition-container__card-item-text">
+                        Dry food for dogs of all breeds Savory 5 kg (rabbit and
+                        duck)
+                      </p>
+                      <div class="nutrition-container__card-item-price">
+                        <p>136.00$</p>
+                        <p
+                          class="nutrition-container__card-item-price__old-price"
+                        >
+                          320.43$
+                        </p>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      class="button nutrition-container__card-item-button"
+                    >
+                      Buy
+                    </button>
+                  </article>
+                </li>
+                <li class="nutrition-container__card-item">
+                  <article>
+                    <div class="nutrition-container__card-item-img">
+                      <img src="./images/dog-feed.png" alt="" />
+                    </div>
+                    <div class="nutrition-container__card-item-code">
+                      <p>Vendor code: 37875</p>
+                      <img src="./images/notfull-star.png" alt="" />
+                    </div>
+                    <div>
+                      <p class="nutrition-container__card-item-text">
+                        Dry food for dogs of average breeds Savory 3 kg (turkey
+                        and lamb)
+                      </p>
+                      <div class="nutrition-container__card-item-price">
+                        <p>136.00$</p>
+                        <p
+                          class="nutrition-container__card-item-price__old-price"
+                        >
+                          320.43$
+                        </p>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      class="button nutrition-container__card-item-button"
+                    >
+                      Buy
+                    </button>
+                  </article>
+                </li>
+                <li class="nutrition-container__card-item">
+                  <article>
+                    <div class="nutrition-container__card-item-img">
+                      <img src="./images/dog-feed-3.png" alt="" />
+                    </div>
+                    <div class="nutrition-container__card-item-code">
+                      <p>Vendor code: 00028</p>
+                      <img src="./images/full-star.png" alt="" />
+                    </div>
+                    <div>
+                      <p class="nutrition-container__card-item-text">
+                        Dry food for dogs of all breeds Savory 5 kg (rabbit and
+                        duck)
+                      </p>
+                      <div class="nutrition-container__card-item-price">
+                        <p>346.00$</p>
+                        <p
+                          class="nutrition-container__card-item-price__old-price"
+                        >
+                          450.43$
+                        </p>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      class="button nutrition-container__card-item-button"
+                    >
+                      Buy
+                    </button>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <nav class="footer__container__nav">
+            <div class="footer__container__icon">
+              <a href="/"
+                ><img src="./images/logo.svg" alt="Logo Dog Club"
+              /></a>
+              <div class="footer__container__icon-link">
+                <a href="/">
+                  <svg width="32" height="32">
+                    <use href="./images/icon.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                <a href="/">
+                  <svg width="32" height="32">
+                    <use href="./images/icon.svg#icon-facebook"></use></svg
+                ></a>
+              </div>
+            </div>
+            <ul class="footer__container__menu">
+              <li><a class="link" href="#description-section">Less talk</a></li>
+              <li>
+                <a class="link" href="#services-section">Services category</a>
+              </li>
+              <li>
+                <a class="link" href="#customer-section">Happy customer</a>
+              </li>
+              <li><a class="link" href="#contact-section">Contact</a></li>
+            </ul>
+
+            <div class="footer__container__contact">
+              <form name="footer-form" autocomplete="off">
+                <div class="footer__container__contact-form">
+                  <label class="input__label visually-hidden" for="user-email">
+                  </label>
+                  <input
+                    class="input__control"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Your email"
+                    required
+                  />
+                  <label class="input__label visually-hidden" for="user-cmc">
+                  </label>
+                  <input
+                    class="input__control"
+                    type="text"
+                    name="user-cmc"
+                    id="user-cmc"
+                    placeholder="Your cmc"
+                    required
+                  />
+                  <div class="footer__container__contact-form__button">
+                    <button class="button" type="submit">Contact us</button>
+                    <label>
+                      <input type="checkbox" checked="checked" />
+                      <span>I agree to the privacy policy</span>
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
